@@ -11,6 +11,7 @@ import edu.wpi.first.wpilibj.Encoder;
  * 4 Victor motor drivetrain with encoders
  * @author eric
  * @see DriveTrain
+ * @see DriveTrain4Victor
  * @see com.team4001.lib.util.EncodedDrive
  *
  */

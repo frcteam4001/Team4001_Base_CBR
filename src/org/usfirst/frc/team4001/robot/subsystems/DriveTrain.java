@@ -23,7 +23,7 @@ public abstract class DriveTrain extends Subsystem {
      */
     public void arcadeDrive(double forward, double turn, double scale) {
     		if (scale <= 0 || scale > 1) {
-    			 throw new IllegalArgumentException("scale must be > 0 and <= 1");
+    			 throw new IllegalArgumentException("scale must be in range 0 < scale <= 1");
     		}else {
     			drive.arcadeDrive(forward*scale, turn*scale,false);
     		}
@@ -50,7 +50,7 @@ public abstract class DriveTrain extends Subsystem {
     /**
 	 * Sends supplied power value to the right drive motor(s).
 	 *
-	 * @param poewr
+	 * @param power
 	 *            Power value sent to motors (-1.0 to 1.0)
 	 */
     public abstract void runRightDrive(double power);
@@ -62,10 +62,12 @@ public abstract class DriveTrain extends Subsystem {
      * 			Power amount to apply to left motor(s) (-1.0 to 1.0)
      * @param rightPower
      * 			Power amount to apply to right motor(s) (-1.0 to 1.0)
+     * @param scale
+     * 			Scale factor to apply (must be > 0 and <= 1 )
      */
-    public void tankDrive(double leftPower, double rightPower) {
-    		runLeftDrive(leftPower);
-    		runRightDrive(rightPower);
+    public void tankDrive(double leftPower, double rightPower, double scale) {
+    		runLeftDrive(leftPower*scale);
+    		runRightDrive(rightPower*scale);
     }
     
     

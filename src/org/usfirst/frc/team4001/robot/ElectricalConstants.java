@@ -15,7 +15,6 @@ public class ElectricalConstants {
 		
 		public static final int GAMECONTROLLER_PRIMARY_PORT					= 0;
 		
-		
 	
 		// ************************************************************************
 		// **************************  DRIVETRAIN  ********************************
@@ -24,7 +23,7 @@ public class ElectricalConstants {
 		public static final int DRIVETRAIN_FRONT_RIGHT 						= 1;  
 		public static final int DRIVETRAIN_REAR_LEFT							= 4;  
 		public static final int DRIVETRAIN_REAR_RIGHT 						= 2;  
-		public static final double DRIVETRAIN_SCALE							= 1.0;
+		public static final double DRIVETRAIN_TELEOP_SCALE					= 1.0;
 
 		// Inverse state of drivetrain motors
 		public static final boolean DRIVETRAIN_FRONT_LEFT_REVERSE			 = true;

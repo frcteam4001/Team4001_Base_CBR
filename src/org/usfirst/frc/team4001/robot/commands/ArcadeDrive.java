@@ -28,7 +28,7 @@ public class ArcadeDrive extends Command {
     		moveForward = Robot.oi.game_controller.getLeftY();
     		turn = Robot.oi.game_controller.getRightX();
     	
-    		Robot.drive.arcadeDrive(moveForward, turn,ElectricalConstants.DRIVETRAIN_SCALE);
+    		Robot.drive.arcadeDrive(moveForward, turn,ElectricalConstants.DRIVETRAIN_TELEOP_SCALE);
     		
     }
 
