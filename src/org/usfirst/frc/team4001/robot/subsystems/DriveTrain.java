@@ -27,7 +27,6 @@ public abstract class DriveTrain extends Subsystem {
     		}else {
     			drive.arcadeDrive(forward*scale, turn*scale,false);
     		}
-    		
     }
     
     
