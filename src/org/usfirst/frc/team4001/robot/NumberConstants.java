@@ -18,7 +18,7 @@ public class NumberConstants {
 	public static final double iDrive 									 = 0.000;
 	public static final double dDrive 									 = 0.03;
 	
-	public static final double Drive_Scale 								 = 0.6;
+	public static final double DRIVE_SCALE 								 = 1.0;
 	
 	
 	//**************************************************************************

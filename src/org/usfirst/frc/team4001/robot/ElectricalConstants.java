@@ -19,20 +19,23 @@ public class ElectricalConstants {
 		// ************************************************************************
 		// **************************  DRIVETRAIN  ********************************
 		// ************************************************************************
-		public static final int DRIVETRAIN_FRONT_LEFT 						= 3;  
-		public static final int DRIVETRAIN_FRONT_RIGHT 						= 1;  
-		public static final int DRIVETRAIN_REAR_LEFT							= 4;  
-		public static final int DRIVETRAIN_REAR_RIGHT 						= 2;  
-		public static final double DRIVETRAIN_TELEOP_SCALE					= 1.0;
+		// TODO set motor ports
+		public static final int DRIVETRAIN_FRONT_LEFT 						= -1;  // SET THIS
+		public static final int DRIVETRAIN_FRONT_RIGHT 						= -1;  // SET THIS
+		public static final int DRIVETRAIN_REAR_LEFT							= -1;  // SET THIS
+		public static final int DRIVETRAIN_REAR_RIGHT 						= -1;  // SET THIS
+		public static final double DRIVETRAIN_TELEOP_SCALE					= 1.0; // SET THIS
 
 		// Inverse state of drivetrain motors
-		public static final boolean DRIVETRAIN_FRONT_LEFT_REVERSE			 = true;
-		public static final boolean DRIVETRAIN_FRONT_RIGHT_REVERSE		 = true;
-		public static final boolean DRIVETRAIN_REAR_LEFT_REVERSE			 = true;
-		public static final boolean DRIVETRAIN_REAR_RIGHT_REVERSE			 = true;
+		// TODO verify motor reverse settings
+		public static final boolean DRIVETRAIN_FRONT_LEFT_REVERSE				= true;		// CHECK
+		public static final boolean DRIVETRAIN_FRONT_RIGHT_REVERSE		 		= true;		// CHECK
+		public static final boolean DRIVETRAIN_REAR_LEFT_REVERSE			 	= true;		// CHECK
+		public static final boolean DRIVETRAIN_REAR_RIGHT_REVERSE			 	= true;		// CHECK
 		
 		
 		//this needs to be set accordingly for distance calculations
+		// TODO verify specifications for encoder calculations
 		public static final int driveWheelRadius		 			= 3;//wheel radius in inches
 		public static final int drivePulsePerRotation 				= 1024; //encoder pulse per rotation
 		public static final double driveGearRatio 					= 1/1; //ratio between wheel and encoder
@@ -45,11 +48,11 @@ public class ElectricalConstants {
 		//****************************** DRIVE ENCODERS *****************************
 		//***************************************************************************
 		
-		public static final int LEFT_DRIVE_ENCODER_A                            = 8;
-		public static final int LEFT_DRIVE_ENCODER_B                            = 9;
+		public static final int LEFT_DRIVE_ENCODER_A                            = -1; 		//SET
+		public static final int LEFT_DRIVE_ENCODER_B                            = -1;		//SET
 		
-		public static final int RIGHT_DRIVE_ENCODER_A                           = 6;
-		public static final int RIGHT_DRIVE_ENCODER_B                           = 7;
+		public static final int RIGHT_DRIVE_ENCODER_A                           = -1;		//SET
+		public static final int RIGHT_DRIVE_ENCODER_B                           = -1;		//SET
 		
 
 }

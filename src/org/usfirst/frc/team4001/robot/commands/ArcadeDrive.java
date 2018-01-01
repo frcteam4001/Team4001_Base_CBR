@@ -1,6 +1,7 @@
 package org.usfirst.frc.team4001.robot.commands;
 
 import org.usfirst.frc.team4001.robot.ElectricalConstants;
+import org.usfirst.frc.team4001.robot.NumberConstants;
 import org.usfirst.frc.team4001.robot.Robot;
 
 import edu.wpi.first.wpilibj.command.Command;
@@ -28,7 +29,7 @@ public class ArcadeDrive extends Command {
     		moveForward = Robot.oi.game_controller.getLeftY();
     		turn = Robot.oi.game_controller.getRightX();
     	
-    		Robot.drive.arcadeDrive(moveForward, turn,ElectricalConstants.DRIVETRAIN_TELEOP_SCALE);
+    		Robot.drive.arcadeDrive(moveForward, turn, NumberConstants.DRIVE_SCALE);
     		
     }
 
