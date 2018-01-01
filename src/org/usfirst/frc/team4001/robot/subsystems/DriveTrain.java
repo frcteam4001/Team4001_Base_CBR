@@ -25,7 +25,7 @@ public abstract class DriveTrain extends Subsystem {
     		if (scale <= 0 || scale > 1) {
     			 throw new IllegalArgumentException("scale must be in range 0 < scale <= 1");
     		}else {
-    			drive.arcadeDrive(forward*scale, turn*scale,false);
+    			this.drive.arcadeDrive(forward*scale, turn*scale,false);
     		}
     }
     
@@ -34,7 +34,7 @@ public abstract class DriveTrain extends Subsystem {
      * Turn off power to the drive train
      */
     public void hardStop() {
-    		drive.arcadeDrive(0, 0);
+    		this.drive.arcadeDrive(0, 0);
     }
     
     
@@ -66,8 +66,14 @@ public abstract class DriveTrain extends Subsystem {
      * 			Scale factor to apply (must be > 0 and <= 1 )
      */
     public void tankDrive(double leftPower, double rightPower, double scale) {
-    		runLeftDrive(leftPower*scale);
-    		runRightDrive(rightPower*scale);
+    	
+    		if (scale <= 0 || scale > 1) {
+			 throw new IllegalArgumentException("scale must be in range 0 < scale <= 1");
+		}else {
+			runLeftDrive(leftPower*scale);
+    			runRightDrive(rightPower*scale);
+		}
+    		
     }
     
     
