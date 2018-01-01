@@ -24,7 +24,7 @@ public class ElectricalConstants {
 		public static final int DRIVETRAIN_FRONT_RIGHT 						= -1;  // SET THIS
 		public static final int DRIVETRAIN_REAR_LEFT							= -1;  // SET THIS
 		public static final int DRIVETRAIN_REAR_RIGHT 						= -1;  // SET THIS
-		public static final double DRIVETRAIN_TELEOP_SCALE					= 1.0; // SET THIS
+		
 
 		// Inverse state of drivetrain motors
 		// TODO verify motor reverse settings
