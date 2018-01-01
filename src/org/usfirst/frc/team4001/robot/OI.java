@@ -18,7 +18,7 @@ public class OI {
 	 */
 	public Gamepad game_controller;
 	
-	// declare primary controller buttons
+	// TODO declare primary controller buttons
 	
 
 		
@@ -29,7 +29,7 @@ public class OI {
 		// instantiate game controllers
 		game_controller = new Gamepad(ElectricalConstants.GAMECONTROLLER_PRIMARY_PORT);
 		
-		// bind game_controller buttons to commands
+		// TODO bind game_controller buttons to commands
 		
 		
 	}
