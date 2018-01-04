@@ -3,7 +3,7 @@ package org.usfirst.frc.team4001.robot.subsystems;
 import org.usfirst.frc.team4001.robot.ElectricalConstants;
 import org.usfirst.frc.team4001.robot.commands.ArcadeDrive;
 
-import com.ctre.CANTalon;
+
 
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.Victor;
