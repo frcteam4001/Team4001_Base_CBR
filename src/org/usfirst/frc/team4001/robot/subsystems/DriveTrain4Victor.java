@@ -11,7 +11,7 @@ import edu.wpi.first.wpilibj.Victor;
 /**
  * Implementation of a basic 4 Victor motor {@link DriveTrain}
  * @author eric
- *@see DriveTrain
+ * @see DriveTrain
  */
 public class DriveTrain4Victor extends DriveTrain {
 	
